@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单验证</title>
+    <style>
+        .icon {
+            width: 1em;
+            height: 1em;
+            vertical-align: -0.15em;
+            fill: currentColor;
+            overflow: hidden;
+        }
+        *{
+            margin: 0;
+            margin: auto;
+            padding: 0;
+            width: auto;
+            max-width: 800px;
+        }
+        body{
+            background-color: cadetblue;
+        }
+        .a{
+            height: 100px;
+            background-color: rgb(214, 228, 21);
+            line-height: 100px;
+            text-align: center;
+            font-size: 30px;
+        }
+        .b{
+            height: 150px;
+            overflow: auto;
+            background-color: #fff;
+        }
+        .d{
+            text-align: center;
+        }
+        .c{
+            height: 350px;
+            color: blueviolet;
+        }
+        .e{
+            width: auto;
+            background-color: rgb(173, 142, 102);
+            height: 50px;
+            line-height: 50px;
+        }
+        .e:first-child{
+            text-align: center;
+        }
+        .e label{
+            width: 100px;
+            display: inline-block;
+            text-align: right;
+        }
+        .d{
+            height: 50px;
+            line-height: 50px;
+            background-color: rgb(173, 142, 102);
+        }
+    </style>
+</head>
+<body>
+    <div class="a">用户注册信息</div>
+    <div class="b">
+        <p>用户协议内容：</p>
+        <br/>
+        <p>我们提供服务时，可能会收集、储存和使用下列与您有关的信息。如果您不提供相关信息，可能无法注册成为我们的用户或无法享受我们提供的某些服务，或者无法达到相关服务拟达到的效果</p>
+        <br/>
+        <p>我们提供服务时，可能会收集、储存和使用下列与您有关的信息。如果您不提供相关信息，可能无法注册成为我们的用户或无法享受我们提供的某些服务，或者无法达到相关服务拟达到的效果</p>
+        <br/>
+        <p>我们提供服务时，可能会收集、储存和使用下列与您有关的信息。如果您不提供相关信息，可能无法注册成为我们的用户或无法享受我们提供的某些服务，或者无法达到相关服务拟达到的效果</p>
+        <br/>
+        <p>我们提供服务时，可能会收集、储存和使用下列与您有关的信息。如果您不提供相关信息，可能无法注册成为我们的用户或无法享受我们提供的某些服务，或者无法达到相关服务拟达到的效果</p>
+        <br/>
+        <p>我们提供服务时，可能会收集、储存和使用下列与您有关的信息。如果您不提供相关信息，可能无法注册成为我们的用户或无法享受我们提供的某些服务，或者无法达到相关服务拟达到的效果</p>
+        <br/>
+        <p>我们提供服务时，可能会收集、储存和使用下列与您有关的信息。如果您不提供相关信息，可能无法注册成为我们的用户或无法享受我们提供的某些服务，或者无法达到相关服务拟达到的效果</p>
+        <br/>
+        <p>我们提供服务时，可能会收集、储存和使用下列与您有关的信息。如果您不提供相关信息，可能无法注册成为我们的用户或无法享受我们提供的某些服务，或者无法达到相关服务拟达到的效果</p>
+    </div>
+    <div class="c">
+        <form>
+            <div class="e">
+                <input id="check" type="checkbox">我同意此协议内容
+            </div>
+            <hr>
+            <div class="e">
+                <label>昵称：</label>
+                <input id="name" type="text" class="disable" placeholder="昵称为2-16个汉字"/>
+            </div>
+            <hr/>
+            <div class="e">
+                <label>密码：</label>
+                <input id="password" type="text" class="disable" placeholder="密码长度为8-12位"/>
+            </div>
+            <hr/>
+            <div class="e">
+                <label>确认密码：</label>
+                <input id="passwordagin" type="text" class="disable" placeholder="请再次输入密码"/>
+            </div>
+            <hr/>
+            <div class="e">
+                <label>出生日期：</label>
+			    <select name="sel1" id="sel1" class="disable">
+			        <option value="year">年</option>
+			    </select>
+			    <select name="sel2" id="sel2" class="disable">
+			        <option value="month">月</option>
+			    </select>
+			    <select name="sel3" id="sel3" class="disable">
+			        <option value="day">日</option>
+			    </select>
+            </div>
+            <hr/>
+            <div class="e">
+                <label>注册邮箱：</label>
+                <input id="email" type="text" class="disable" placeholder="请输入邮箱"/>
+            </p>
+            <hr>
+            <div class="e">
+                <label>验证码：</label>
+				<span id="question"></span>
+                <input id="refreshResult" style="width:30px" type="text" class="disable"/>
+                <svg class="icon" aria-hidden="true" id="refresh" class="disable">
+                    <use xlink:href="#icon-shuaxin"></use>
+                </svg>
+				<span id="returnResult"></span>
+            </div>
+        </form>
+    </div>
+    <script src="https://yj920.github.io/study/jQuery/jquery-2.1.1.min.js"></script>
+    <script src="main.js"></script>
+    <script src="https://yj920.github.io/study/iconfont.js"></script>
+</body>
+</html>
